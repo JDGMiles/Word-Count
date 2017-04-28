@@ -8,7 +8,7 @@ a:link {color:#CF0000; text-decoration: none;}
 a:link:hover {text-decoration:underline}
 a:visited {color:#CF0000;}
 
-.inputbox {width:700px; height:315px; font-size:55px; font-family:georgia; color:white; background-color:black; text-align:center;}
+.inputbox {width:700px; height:323px; font-size:55px; font-family:georgia; color:white; background-color:black; text-align:center;}
 .outputbox {width:700px; height:70px; font-size:55px; font-family:georgia; color:white; background-color:black; text-align:center;}
 
 .overlay {
