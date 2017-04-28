@@ -1,12 +1,15 @@
-@font-face {font-family: Liberation Serif; src: url(http://jdgmiles.github.io/LiberationSerif.woff);}
+body {background-color:#000000}
+table {border-spacing: 0;}
+tr, td {margin: 0; padding: 0; border: 0; spacing: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
 
-button, body, a, textarea, input {color: white; background-color:#000000; font-family: Liberation Serif, Tahoma, Arial, Helvetica, Sans-Serif;}
-button {padding:0px; font-size:160%;}
-a, input {text-align:center; font-size:160%;}
-.topboxes{padding:10px;10px;10px;10px; text-align:left; height:420px; width:482px; font-size:158%; overflow:auto;}
-.colourbutton{width:222px}
-.bookbutton{width:237px}
-div {border:1px solid white}
+.gridcell {background-color: black;}
+
+a:link {color:#CF0000; text-decoration: none;}
+a:link:hover {text-decoration:underline}
+a:visited {color:#CF0000;}
+
+.inputbox {width:700px; height:315px; font-size:55px; font-family:georgia; color:white; background-color:black; text-align:center;}
+.outputbox {width:700px; height:70px; font-size:55px; font-family:georgia; color:white; background-color:black; text-align:center;}
 
 .overlay {
   position: fixed;
@@ -14,7 +17,6 @@ div {border:1px solid white}
   bottom: 0;
   left: 0;
   right: 0;
-  border:0px;
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
   visibility: hidden;
@@ -27,12 +29,12 @@ div {border:1px solid white}
 }
 
 .popup {
-  margin: 180px auto;
-  padding: 20px;
+  margin: 70px auto;
+  padding: 10px;
   background: #181818;
   border:2px solid #AAAAAA;
   border-radius: 20px;
-  width: 500px;
+  width: 400px;
   position: relative;
   transition: all 0s ease-in-out;
 }
@@ -40,8 +42,6 @@ div {border:1px solid white}
 .popup .close {
   position: absolute;
   top: 20px;
-  right: 30px;
-  background-color:#181818;
   transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
@@ -49,7 +49,7 @@ div {border:1px solid white}
   color: #fff;
 }
 .popup .close:hover {
-  color: #06D85F;
+  color: #FF0000;
 }
 .popup .content {
   max-height: 30%;
